@@ -1,0 +1,29 @@
+:root {
+    --theme-color: #9C3848;
+    --light-color: #FFFAFB;
+    --dark-color: #201E1F;
+}
+
+@font-face {
+    font-family: "AvenirRound";
+    src: url("/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AvenirMedium";
+    src: url("/fonts/Metropolis-regular.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "AvenirRound";
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}

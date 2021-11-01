@@ -1,0 +1,79 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    transition: .4s ease-out;   
+}
+
+.active {
+    background: var(--dark-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.nav header {
+    margin-left: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 15px 35px;
+}   
+
+.nav ul li a,
+.smallNav ul li a {
+    color: var(--dark-color);
+    font-size: 21px;
+    transition: .4s ease-out;
+    letter-spacing: 0.05em;
+}
+
+.nav.active ul li a {
+    color: var(--light-color);
+}
+
+.smallNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--theme-color);
+}
+
+.smallNav ul,
+.smallNav li {
+  margin: 0;
+  padding: 0;
+}
+
+.smallNav ul {
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+
+.smallNav li {
+  list-style: none;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.smallNav li a {
+    font-size: 2em !important;
+}
