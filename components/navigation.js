@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react"
 import { motion } from "framer-motion"
 import { MenuToggle } from "./menuToggle"
 import { MenuItems } from "./menuItems"
+import Logo from "./logo"
 
 const sidebar = {
     open: (height = 1000) => ({
@@ -72,12 +73,12 @@ const Navigation = () => {
             {!isSmall ? (
                 <nav className={`${styles.nav} ${isScrolled ? styles.active : ""}`}>
                     <header>
-
+                        <Logo style={isScrolled ? ({ fill: "#FFFAFB" }) : ({ fill: "#201E1F" })}/>
                     </header>
 
                     <MenuItems />
 
-                    <div></div>
+                    {/* <div></div> */}
                 </nav>
             ) : (
 
